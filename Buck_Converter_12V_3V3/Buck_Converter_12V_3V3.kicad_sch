@@ -6,7 +6,7 @@
 	(paper "A4")
 	(lib_symbols)
 	(sheet
-		(at 38.1 132.08)
+		(at 64.77 73.66)
 		(size 68.58 35.56)
 		(fields_autoplaced yes)
 		(stroke
@@ -18,7 +18,7 @@
 		)
 		(uuid "baedb665-4e5c-4013-b239-c7af51cb2ae8")
 		(property "Sheetname" "POL"
-			(at 38.1 131.3684 0)
+			(at 64.77 72.9484 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27,7 +27,7 @@
 			)
 		)
 		(property "Sheetfile" "POL.kicad_sch"
-			(at 38.1 168.2246 0)
+			(at 64.77 109.8046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
