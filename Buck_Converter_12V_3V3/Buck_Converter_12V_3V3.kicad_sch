@@ -1,5 +1,51 @@
-(kicad_sch (version 20231120) (generator "eeschema") (generator_version "8.0")
-  (paper "A4")
-  (lib_symbols)
-  (symbol_instances)
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "32fed717-3fa9-48ea-a1a1-4ba9bec3b454")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 38.1 132.08)
+		(size 68.58 35.56)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "baedb665-4e5c-4013-b239-c7af51cb2ae8")
+		(property "Sheetname" "POL"
+			(at 38.1 131.3684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "POL.kicad_sch"
+			(at 38.1 168.2246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Buck_Converter_12V_3V3"
+				(path "/32fed717-3fa9-48ea-a1a1-4ba9bec3b454"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
 )

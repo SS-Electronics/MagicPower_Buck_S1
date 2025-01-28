@@ -1,0 +1,583 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "d5c051a2-57d6-45f8-b159-eb431939de63")
+	(paper "A4")
+	(lib_symbols
+		(symbol "TDA38813:TDA38813"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "G?"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" "TDA38813"
+				(at 0 -38.1 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Synchronous Buck Regulator"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TDA38813_1_0"
+				(rectangle
+					(start 25.4 0)
+					(end 0 -35.56)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(text "11...18"
+					(at 30.226 -30.988 0)
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+						(justify right top)
+					)
+				)
+				(pin input line
+					(at 30.48 -2.54 180)
+					(length 5.08)
+					(name "BST"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -5.08 -5.08 0)
+					(length 5.08)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 30.48 -33.02 180)
+					(length 5.08)
+					(name "PGND"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 30.48 -33.02 180)
+					(length 5.08)
+					(name "PGND"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 30.48 -33.02 180)
+					(length 5.08)
+					(name "PGND"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 30.48 -33.02 180)
+					(length 5.08)
+					(name "PGND"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 30.48 -33.02 180)
+					(length 5.08)
+					(name "PGND"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 30.48 -33.02 180)
+					(length 5.08)
+					(name "PGND"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 30.48 -33.02 180)
+					(length 5.08)
+					(name "PGND"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 30.48 -33.02 180)
+					(length 5.08)
+					(name "PGND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -5.08 -20.32 0)
+					(length 5.08)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 30.48 -27.94 180)
+					(length 5.08)
+					(name "AGND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 30.48 -7.62 180)
+					(length 5.08)
+					(name "SW"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -5.08 -2.54 0)
+					(length 5.08)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -5.08 -30.48 0)
+					(length 5.08)
+					(name "CS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -5.08 -25.4 0)
+					(length 5.08)
+					(name "MODE"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 30.48 -22.86 180)
+					(length 5.08)
+					(name "SS/VREF"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 30.48 -17.78 180)
+					(length 5.08)
+					(name "RGND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 30.48 -12.7 180)
+					(length 5.08)
+					(name "FB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -5.08 -10.16 0)
+					(length 5.08)
+					(name "EN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at -5.08 -15.24 0)
+					(length 5.08)
+					(name "PGOOD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TDA38813:TDA38813")
+		(at 121.92 83.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1f5b6549-f198-4ec7-9246-f30bb05f8a5d")
+		(property "Reference" "G1"
+			(at 123.952 81.788 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TDA38813"
+			(at 132.334 81.788 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TDA38813:IFX-PG-QFN-21-V"
+			(at 121.92 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.infineon.com/cms/en/product/power/dc-dc-converters/integrated-pol-voltage-regulators/tda38813/#!designsupport"
+			(at 121.92 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Synchronous Buck Regulator"
+			(at 121.92 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "7"
+			(uuid "36c11f6e-2b15-4540-b129-504c58142929")
+		)
+		(pin "16"
+			(uuid "8d22815e-9a4a-42d0-9835-877303ac3e7f")
+		)
+		(pin "19"
+			(uuid "38ebf9c7-82ff-4875-8410-a6d7638147c9")
+		)
+		(pin "17"
+			(uuid "2748d6e8-e0cf-44f1-84db-aef1db61404d")
+		)
+		(pin "8"
+			(uuid "df85cb5b-1a12-46d6-a7fa-4928e742fa50")
+		)
+		(pin "5"
+			(uuid "039ba8cd-273a-4b5a-be0f-3603dac81a75")
+		)
+		(pin "1"
+			(uuid "2c53b652-0a48-4600-9f1a-014cbd15bade")
+		)
+		(pin "12"
+			(uuid "c10753f2-afbd-4fd2-8710-e154cdd79a6d")
+		)
+		(pin "10"
+			(uuid "7b1ea1bc-297c-4cf4-9c6c-084e8d98de3a")
+		)
+		(pin "11"
+			(uuid "a8c3bbc9-cdfc-491a-8808-3689a05fedca")
+		)
+		(pin "4"
+			(uuid "9f9041a8-461a-4df9-8f30-a53acd410667")
+		)
+		(pin "18"
+			(uuid "dd9c85da-333a-49c2-82c1-4213ed3756a8")
+		)
+		(pin "13"
+			(uuid "ba06dcea-22db-4e75-b850-12e210eac1ee")
+		)
+		(pin "9"
+			(uuid "7baa1d21-be34-48dd-aa02-9f2fd8c98231")
+		)
+		(pin "2"
+			(uuid "6f23a857-e354-4ee1-8c90-7ca232db4e59")
+		)
+		(pin "20"
+			(uuid "0824295a-c5a8-42c3-900e-ab7ed1a07597")
+		)
+		(pin "15"
+			(uuid "0bf6eea3-33ec-4c5c-84af-805a85c77eed")
+		)
+		(pin "6"
+			(uuid "bcf4322e-5de0-479f-aa73-00a2282a3d99")
+		)
+		(pin "14"
+			(uuid "248d96ce-1f82-4748-998e-84e6100940b6")
+		)
+		(pin "21"
+			(uuid "5443f720-1be3-4d09-b987-74080cebcdae")
+		)
+		(pin "3"
+			(uuid "cc688309-f630-487c-a244-05eb8b03fb31")
+		)
+		(instances
+			(project ""
+				(path "/32fed717-3fa9-48ea-a1a1-4ba9bec3b454/baedb665-4e5c-4013-b239-c7af51cb2ae8"
+					(reference "G1")
+					(unit 1)
+				)
+			)
+		)
+	)
+)

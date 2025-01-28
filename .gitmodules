@@ -1,0 +1,3 @@
+[submodule "Buck_Converter_12V_3V3/KiCAD_DB"]
+	path = Buck_Converter_12V_3V3/KiCAD_DB
+	url = git@github.com:subhajitroy005/KiCAD_DB.git
