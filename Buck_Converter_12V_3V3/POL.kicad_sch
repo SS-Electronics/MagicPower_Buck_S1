@@ -1328,6 +1328,12 @@
 		(uuid "23479366-519a-4b67-ac08-1120f7a3920d")
 	)
 	(junction
+		(at 128.27 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "323f4421-afcd-4d93-be8d-b3399322122e")
+	)
+	(junction
 		(at 113.03 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1550,6 +1556,12 @@
 		(uuid "ea674eb0-1de8-40c5-a196-26171a7872df")
 	)
 	(junction
+		(at 128.27 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eb98020f-18ca-496a-ab3b-9e8f39b227c9")
+	)
+	(junction
 		(at 43.18 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1592,6 +1604,16 @@
 			(type default)
 		)
 		(uuid "063d0c39-95e5-4990-8357-b29b3bf6936e")
+	)
+	(wire
+		(pts
+			(xy 132.08 74.93) (xy 128.27 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06835511-5de6-4a19-b875-60a0a3e1f78d")
 	)
 	(wire
 		(pts
@@ -1662,6 +1684,16 @@
 			(type default)
 		)
 		(uuid "229539ce-8cfb-4d34-b989-4bab23ad6543")
+	)
+	(wire
+		(pts
+			(xy 87.63 74.93) (xy 128.27 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27098f31-fceb-4e74-8c58-26d633ec231b")
 	)
 	(wire
 		(pts
@@ -1742,6 +1774,16 @@
 			(type default)
 		)
 		(uuid "48092d53-608f-4586-8eb5-c6405e9cc40e")
+	)
+	(wire
+		(pts
+			(xy 87.63 82.55) (xy 87.63 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e3f3301-d86f-4158-979e-1e64f2ede632")
 	)
 	(wire
 		(pts
@@ -2412,6 +2454,16 @@
 			(type default)
 		)
 		(uuid "f52e7728-f000-4ca3-9cc7-5bae96c8ef92")
+	)
+	(wire
+		(pts
+			(xy 128.27 72.39) (xy 128.27 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5a984fc-fec1-4a10-950c-02b38d589533")
 	)
 	(wire
 		(pts
@@ -5252,6 +5304,150 @@
 			(project "Buck_Converter_12V_3V3"
 				(path "/32fed717-3fa9-48ea-a1a1-4ba9bec3b454/baedb665-4e5c-4013-b239-c7af51cb2ae8"
 					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 87.63 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dd14b307-3e1f-455a-b061-b50f927a58d2")
+		(property "Reference" "C28"
+			(at 89.154 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2.2uF"
+			(at 89.408 73.406 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+			(at 88.5952 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.in/en/products/detail/tdk-corporation/C2012X5R0J476M125AC/2443465?s=N4IgTCBcDaIMJgAwEYwA0CsAlRApALAOwBsAsiALoC%2BQA"
+			(at 87.63 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 87.63 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part#" "90-12703-1-ND "
+			(at 87.63 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f6ff978a-d850-4f65-b8b3-e5564fc74509")
+		)
+		(pin "1"
+			(uuid "418c885a-68a1-4e9a-802a-936ac3a7d5d5")
+		)
+		(instances
+			(project "Buck_Converter_12V_3V3"
+				(path "/32fed717-3fa9-48ea-a1a1-4ba9bec3b454/baedb665-4e5c-4013-b239-c7af51cb2ae8"
+					(reference "C28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 87.63 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e2632071-0fd3-4304-b335-05200784a32d")
+		(property "Reference" "#PWR06"
+			(at 87.63 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 87.63 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 87.63 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 87.63 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 87.63 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ef7a5b5b-5bef-49fb-9dc6-7795e9909096")
+		)
+		(instances
+			(project "Buck_Converter_12V_3V3"
+				(path "/32fed717-3fa9-48ea-a1a1-4ba9bec3b454/baedb665-4e5c-4013-b239-c7af51cb2ae8"
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
