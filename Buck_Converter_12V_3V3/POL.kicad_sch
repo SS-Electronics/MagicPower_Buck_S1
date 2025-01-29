@@ -5,6 +5,108 @@
 	(uuid "d5c051a2-57d6-45f8-b159-eb431939de63")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.762) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:C"
 			(pin_numbers hide)
 			(pin_names
@@ -299,23 +401,24 @@
 				)
 			)
 		)
-		(symbol "Device:L"
+		(symbol "Device:R"
 			(pin_numbers hide)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 0)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "L"
-				(at -1.27 0 90)
+			(property "Reference" "R"
+				(at 2.032 0 90)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "L"
-				(at 1.905 0 90)
+			(property "Value" "R"
+				(at 0 0 90)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -323,7 +426,7 @@
 				)
 			)
 			(property "Footprint" ""
-				(at 0 0 0)
+				(at -1.778 0 90)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -340,7 +443,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Inductor"
+			(property "Description" "Resistor"
 				(at 0 0 0)
 				(effects
 					(font
@@ -349,7 +452,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "inductor choke coil reactor magnetic"
+			(property "ki_keywords" "R res resistor"
 				(at 0 0 0)
 				(effects
 					(font
@@ -358,7 +461,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
+			(property "ki_fp_filters" "R_*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -367,49 +470,12 @@
 					(hide yes)
 				)
 			)
-			(symbol "L_0_1"
-				(arc
-					(start 0 -2.54)
-					(mid 0.6323 -1.905)
-					(end 0 -1.27)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
 					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -1.27)
-					(mid 0.6323 -0.635)
-					(end 0 0)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 0)
-					(mid 0.6323 0.635)
-					(end 0 1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 1.27)
-					(mid 0.6323 1.905)
-					(end 0 2.54)
-					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -417,11 +483,11 @@
 					)
 				)
 			)
-			(symbol "L_1_1"
+			(symbol "R_1_1"
 				(pin passive line
 					(at 0 3.81 270)
 					(length 1.27)
-					(name "1"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -439,7 +505,7 @@
 				(pin passive line
 					(at 0 -3.81 90)
 					(length 1.27)
-					(name "2"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -450,6 +516,210 @@
 						(effects
 							(font
 								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Inductor:SDEM25201T-R24MS"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "L"
+				(at -10.16 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" "SDEM25201T-R24MS"
+				(at -10.16 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "SDEM25201T-R24MS:IND_SDEM25201T-R24MS"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "PARTREV" "N/A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MANUFACTURER" "Delta Electronics"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MAXIMUM_PACKAGE_HEIGHT" "1.0 mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "STANDARD" "Manufacturer Recommendations"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(symbol "SDEM25201T-R24MS_0_0"
+				(arc
+					(start -2.54 0)
+					(mid -3.81 1.2645)
+					(end -5.08 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 0)
+					(mid -1.27 1.2645)
+					(end -2.54 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 0) (xy -7.62 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 0) (xy 7.62 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 2.54 0)
+					(mid 1.27 1.2645)
+					(end 0 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 5.08 0)
+					(mid 3.81 1.2645)
+					(end 2.54 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -12.7 0 0)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 0 180)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
 							)
 						)
 					)
@@ -1004,6 +1274,12 @@
 		)
 	)
 	(junction
+		(at 231.14 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0b0d8c9f-8e1e-4e30-a3b4-277dd6251387")
+	)
+	(junction
 		(at 49.53 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1016,10 +1292,34 @@
 		(uuid "1847b6e6-25f2-4e61-8365-1b0577d5d27d")
 	)
 	(junction
+		(at 254 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1c715e3f-2735-4998-81e3-9ddd91b68e38")
+	)
+	(junction
 		(at 106.68 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1d001a90-c2bc-48b2-be3f-1b3d5943fb00")
+	)
+	(junction
+		(at 259.08 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1f1f3400-f2d2-40af-a252-29c86b8368b5")
+	)
+	(junction
+		(at 243.84 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1f7bfcac-53a0-4f87-8cc9-a0e9064e118e")
+	)
+	(junction
+		(at 240.03 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "21bc157d-625b-44c4-9426-0d96115f4267")
 	)
 	(junction
 		(at 78.74 68.58)
@@ -1046,10 +1346,46 @@
 		(uuid "37ff02d3-d336-4129-90c5-ccffab407803")
 	)
 	(junction
+		(at 176.53 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3caef411-6b02-4218-9a75-d245f3421b70")
+	)
+	(junction
+		(at 238.76 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3eff2733-7d82-4677-8d07-fdbf7da4a389")
+	)
+	(junction
+		(at 223.52 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3fec2904-5f47-4c3a-a874-f7df2f01a35f")
+	)
+	(junction
+		(at 238.76 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4048987e-85aa-4fd7-b2c9-1eb1a6d22b8e")
+	)
+	(junction
+		(at 259.08 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4367d149-3796-4b03-af97-b1c0b0bf6359")
+	)
+	(junction
 		(at 87.63 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "451971e4-da6b-498d-8b9c-b5568ccedeb2")
+	)
+	(junction
+		(at 248.92 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "45b5a4e3-5c83-429a-81a5-2e334dbb2a8b")
 	)
 	(junction
 		(at 106.68 52.07)
@@ -1064,10 +1400,52 @@
 		(uuid "52cc8d2a-0f44-457e-9522-71887c52a3c0")
 	)
 	(junction
+		(at 264.16 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5bd7a3f7-2eeb-48aa-a678-78e77f21bd89")
+	)
+	(junction
+		(at 233.68 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "640b1f24-d56a-4f4b-9e11-87db1ad55d40")
+	)
+	(junction
 		(at 100.33 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6f51a513-cff0-4dd5-8a48-6a530e230e66")
+	)
+	(junction
+		(at 254 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7730aecd-fde1-4403-acad-17f2707e4476")
+	)
+	(junction
+		(at 243.84 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7cb47bc4-fabf-48ff-b704-95153d0467be")
+	)
+	(junction
+		(at 233.68 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7e3b5fec-c715-406e-b948-d2487081f2b7")
+	)
+	(junction
+		(at 218.44 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "825820d3-a185-4bdc-885f-449a5b03e1db")
+	)
+	(junction
+		(at 228.6 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8497ef39-82a5-4931-9f31-7cc7d1cbe13e")
 	)
 	(junction
 		(at 81.28 52.07)
@@ -1088,6 +1466,18 @@
 		(uuid "91038063-6686-4b4f-9103-62d3562abf06")
 	)
 	(junction
+		(at 213.36 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9d9a3fd7-d8ad-4ac4-be15-1e0ab654da29")
+	)
+	(junction
+		(at 228.6 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a00bf1fa-048f-4ba3-afe4-de28ca9e5a5e")
+	)
+	(junction
 		(at 93.98 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1098,6 +1488,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "aa8b0135-8a25-4c82-9b5c-1feae722f953")
+	)
+	(junction
+		(at 218.44 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ac0efff7-8dd2-4dce-b069-0ed12507640f")
 	)
 	(junction
 		(at 87.63 68.58)
@@ -1118,10 +1514,34 @@
 		(uuid "b6f0e839-7d41-467d-bbf6-b1fb56018453")
 	)
 	(junction
+		(at 208.28 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c4437671-b241-4b43-af2d-24358ef29001")
+	)
+	(junction
 		(at 100.33 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cf8ee060-638b-4d00-8920-3858426eb6a5")
+	)
+	(junction
+		(at 222.25 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d24032dc-285c-4605-90e5-96a2bd20484c")
+	)
+	(junction
+		(at 240.03 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d3a182d3-a8a7-4a53-9d13-dcf2423a6d73")
+	)
+	(junction
+		(at 248.92 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e0e39024-8fdf-4a07-9741-69a551f912b3")
 	)
 	(junction
 		(at 49.53 68.58)
@@ -1141,6 +1561,38 @@
 		(color 0 0 0 0)
 		(uuid "f55e1633-7267-4fdd-91f3-e46c02b8c480")
 	)
+	(junction
+		(at 213.36 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fbd915bd-555a-433e-858a-0cdb57dfc34a")
+	)
+	(junction
+		(at 223.52 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fef37ef9-c01e-4f02-8f65-697599701f87")
+	)
+	(wire
+		(pts
+			(xy 176.53 72.39) (xy 176.53 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04f7b400-36b1-474f-a41c-c30e4becee48")
+	)
+	(wire
+		(pts
+			(xy 217.17 102.87) (xy 222.25 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "063d0c39-95e5-4990-8357-b29b3bf6936e")
+	)
 	(wire
 		(pts
 			(xy 55.88 68.58) (xy 62.23 68.58)
@@ -1150,6 +1602,26 @@
 			(type default)
 		)
 		(uuid "07f89dc7-327b-4a26-b0f7-c40b8a8f6e98")
+	)
+	(wire
+		(pts
+			(xy 115.57 91.44) (xy 115.57 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d6330a6-f4d5-4d28-b697-d7941a7ada9a")
+	)
+	(wire
+		(pts
+			(xy 250.19 102.87) (xy 240.03 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "179b2156-f2c3-4443-808a-5c69e13e8325")
 	)
 	(wire
 		(pts
@@ -1173,6 +1645,36 @@
 	)
 	(wire
 		(pts
+			(xy 264.16 67.31) (xy 270.51 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ed7790a-5cda-4424-85be-a7bfe79cb869")
+	)
+	(wire
+		(pts
+			(xy 254 74.93) (xy 259.08 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "229539ce-8cfb-4d34-b989-4bab23ad6543")
+	)
+	(wire
+		(pts
+			(xy 222.25 102.87) (xy 240.03 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a45ccde-bf93-4687-9bc1-5df7831b6b5b")
+	)
+	(wire
+		(pts
 			(xy 93.98 52.07) (xy 100.33 52.07)
 		)
 		(stroke
@@ -1183,6 +1685,26 @@
 	)
 	(wire
 		(pts
+			(xy 233.68 74.93) (xy 238.76 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d9b82de-5c89-445f-8736-f3fdb6c28561")
+	)
+	(wire
+		(pts
+			(xy 254 67.31) (xy 259.08 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3514a2e9-22f7-4331-9331-31e7f5aeab6a")
+	)
+	(wire
+		(pts
 			(xy 113.03 52.07) (xy 128.27 52.07)
 		)
 		(stroke
@@ -1190,6 +1712,16 @@
 			(type default)
 		)
 		(uuid "37220384-9169-465f-a3e1-d4c78b53f3a1")
+	)
+	(wire
+		(pts
+			(xy 248.92 67.31) (xy 254 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42aabc41-1933-4788-8008-d0057918ea0d")
 	)
 	(wire
 		(pts
@@ -1210,6 +1742,36 @@
 			(type default)
 		)
 		(uuid "48092d53-608f-4586-8eb5-c6405e9cc40e")
+	)
+	(wire
+		(pts
+			(xy 167.64 77.47) (xy 176.53 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "552a3412-de52-4510-aeaf-cc64ba9c1ff7")
+	)
+	(wire
+		(pts
+			(xy 228.6 74.93) (xy 231.14 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "561cb7e8-2fa0-4ec3-a99e-78bd32a7d0f8")
+	)
+	(wire
+		(pts
+			(xy 248.92 74.93) (xy 254 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a07d82d-c964-44c7-9c77-e2160af1586f")
 	)
 	(wire
 		(pts
@@ -1253,6 +1815,16 @@
 	)
 	(wire
 		(pts
+			(xy 243.84 67.31) (xy 248.92 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f8546e9-d410-4b56-915b-9217e3322f4f")
+	)
+	(wire
+		(pts
 			(xy 106.68 60.96) (xy 106.68 52.07)
 		)
 		(stroke
@@ -1260,6 +1832,36 @@
 			(type default)
 		)
 		(uuid "5ff583ff-85e3-45a0-be52-db608a8698a7")
+	)
+	(wire
+		(pts
+			(xy 250.19 95.25) (xy 240.03 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60fe0787-7b7a-413b-9e16-86bcc9963ce7")
+	)
+	(wire
+		(pts
+			(xy 203.2 77.47) (xy 203.2 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6399dba4-6da8-4cde-9a38-bbaac4d0ed50")
+	)
+	(wire
+		(pts
+			(xy 222.25 82.55) (xy 222.25 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67f7a672-62b5-489b-a465-7337b54e4e83")
 	)
 	(wire
 		(pts
@@ -1290,6 +1892,46 @@
 			(type default)
 		)
 		(uuid "6dd9c40d-0486-4fa4-890c-e34b6e891f31")
+	)
+	(wire
+		(pts
+			(xy 176.53 77.47) (xy 177.8 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76117544-4d11-4d86-ae3c-b53037882e93")
+	)
+	(wire
+		(pts
+			(xy 238.76 74.93) (xy 243.84 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76737842-cd0d-4250-9047-2c902ac060a6")
+	)
+	(wire
+		(pts
+			(xy 218.44 74.93) (xy 223.52 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76e2e227-df61-4fb8-9e27-c4000519c69a")
+	)
+	(wire
+		(pts
+			(xy 240.03 91.44) (xy 240.03 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a813b3c-d523-4e82-8ef3-5fe2a28c68c5")
 	)
 	(wire
 		(pts
@@ -1363,6 +2005,26 @@
 	)
 	(wire
 		(pts
+			(xy 240.03 81.28) (xy 240.03 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8981b65f-1a9e-40db-bf17-ee6bc56c7843")
+	)
+	(wire
+		(pts
+			(xy 259.08 67.31) (xy 264.16 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91959c03-a943-4ddd-a558-89bf4dc24974")
+	)
+	(wire
+		(pts
 			(xy 100.33 52.07) (xy 106.68 52.07)
 		)
 		(stroke
@@ -1383,6 +2045,66 @@
 	)
 	(wire
 		(pts
+			(xy 203.2 67.31) (xy 208.28 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "991e8aa2-8c33-4937-9a53-a50b997654d1")
+	)
+	(wire
+		(pts
+			(xy 167.64 72.39) (xy 168.91 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c0a7018-9e67-436d-9885-4ded9193cb0b")
+	)
+	(wire
+		(pts
+			(xy 223.52 67.31) (xy 228.6 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f6842eb-e814-4100-9099-e290b3bab10a")
+	)
+	(wire
+		(pts
+			(xy 223.52 74.93) (xy 228.6 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2d6d98c-4242-43d8-8e7b-146124f169dd")
+	)
+	(wire
+		(pts
+			(xy 233.68 67.31) (xy 238.76 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a815ba7a-2a1e-4504-a692-31487c01f78b")
+	)
+	(wire
+		(pts
+			(xy 208.28 67.31) (xy 213.36 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2a68c8e-bf7c-42e4-8e5b-5a676908709f")
+	)
+	(wire
+		(pts
 			(xy 93.98 68.58) (xy 100.33 68.58)
 		)
 		(stroke
@@ -1393,6 +2115,16 @@
 	)
 	(wire
 		(pts
+			(xy 213.36 74.93) (xy 218.44 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b32fe103-2fa0-4143-9375-f796197043ba")
+	)
+	(wire
+		(pts
 			(xy 43.18 52.07) (xy 49.53 52.07)
 		)
 		(stroke
@@ -1400,6 +2132,16 @@
 			(type default)
 		)
 		(uuid "b5df116e-21c2-46f3-8f1b-fa9854f8cef8")
+	)
+	(wire
+		(pts
+			(xy 243.84 81.28) (xy 240.03 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b71bda2c-2e05-4c2f-a7fc-949bade2fdf9")
 	)
 	(wire
 		(pts
@@ -1423,6 +2165,16 @@
 	)
 	(wire
 		(pts
+			(xy 208.28 74.93) (xy 213.36 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1461110-9e5b-4982-b1f5-c1d149c47d0d")
+	)
+	(wire
+		(pts
 			(xy 128.27 52.07) (xy 128.27 72.39)
 		)
 		(stroke
@@ -1430,6 +2182,16 @@
 			(type default)
 		)
 		(uuid "c291a940-e4fa-4d62-98b8-76637ae08a3f")
+	)
+	(wire
+		(pts
+			(xy 240.03 102.87) (xy 240.03 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c309d678-767b-447a-9fa2-9911b8e71be7")
 	)
 	(wire
 		(pts
@@ -1443,6 +2205,16 @@
 	)
 	(wire
 		(pts
+			(xy 228.6 67.31) (xy 233.68 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4e68470-4c3e-4525-a035-6b34702f72c6")
+	)
+	(wire
+		(pts
 			(xy 87.63 52.07) (xy 87.63 60.96)
 		)
 		(stroke
@@ -1450,6 +2222,16 @@
 			(type default)
 		)
 		(uuid "c9879ef7-2513-49c7-9d33-1196c55aa4b3")
+	)
+	(wire
+		(pts
+			(xy 115.57 90.17) (xy 132.08 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc24a7e7-3930-47ec-89a8-8028b1e05aa9")
 	)
 	(wire
 		(pts
@@ -1463,6 +2245,16 @@
 	)
 	(wire
 		(pts
+			(xy 259.08 74.93) (xy 264.16 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc7f73d2-57d6-43e0-8540-a7c3dd77a23d")
+	)
+	(wire
+		(pts
 			(xy 113.03 52.07) (xy 113.03 60.96)
 		)
 		(stroke
@@ -1473,6 +2265,16 @@
 	)
 	(wire
 		(pts
+			(xy 175.26 87.63) (xy 175.26 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cfa11fff-7380-47d9-a448-ea09d3e6d7b1")
+	)
+	(wire
+		(pts
 			(xy 68.58 52.07) (xy 68.58 60.96)
 		)
 		(stroke
@@ -1480,6 +2282,26 @@
 			(type default)
 		)
 		(uuid "d5c36f2f-7832-41d8-8fb1-481f6bb9c9c1")
+	)
+	(wire
+		(pts
+			(xy 238.76 67.31) (xy 243.84 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5cb7ae2-c606-4449-bd87-043e4d5aeb78")
+	)
+	(wire
+		(pts
+			(xy 243.84 74.93) (xy 248.92 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc574889-a19e-4aaa-840a-e2657ceb666f")
 	)
 	(wire
 		(pts
@@ -1500,6 +2322,76 @@
 			(type default)
 		)
 		(uuid "deb9c0b5-867d-4b62-ae45-968c215005e0")
+	)
+	(wire
+		(pts
+			(xy 218.44 67.31) (xy 223.52 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2c91fc2-682d-4717-8ab4-cc87ff8aa806")
+	)
+	(wire
+		(pts
+			(xy 231.14 74.93) (xy 231.14 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e331cea6-c147-487f-8608-d4618ba287a2")
+	)
+	(wire
+		(pts
+			(xy 115.57 99.06) (xy 115.57 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6d2df2e-f785-4d4a-b38b-aa992572b6d6")
+	)
+	(wire
+		(pts
+			(xy 231.14 74.93) (xy 233.68 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e818b8d2-653e-4037-97cc-0e4c1c5775f8")
+	)
+	(wire
+		(pts
+			(xy 167.64 82.55) (xy 222.25 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8af9ed8-3a41-49fe-a8b5-ab4276bdf59f")
+	)
+	(wire
+		(pts
+			(xy 213.36 67.31) (xy 218.44 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1984797-6bbb-4e43-b55e-dce34b54f70c")
+	)
+	(wire
+		(pts
+			(xy 240.03 113.03) (xy 240.03 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1d82b96-6877-4a65-b6f9-fb66d7ee7a57")
 	)
 	(wire
 		(pts
@@ -1531,6 +2423,16 @@
 		)
 		(uuid "f9208266-655b-4d42-9b57-ec87f141e24f")
 	)
+	(wire
+		(pts
+			(xy 167.64 87.63) (xy 175.26 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff4ab225-64a6-4756-ae0d-a974431609b6")
+	)
 	(global_label "12V_IN"
 		(shape input)
 		(at 36.83 52.07 180)
@@ -1550,6 +2452,350 @@
 				)
 				(justify right)
 				(hide yes)
+			)
+		)
+	)
+	(global_label "5V_OUT"
+		(shape input)
+		(at 243.84 81.28 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bda60197-755d-497b-b7de-889423e786e8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 253.7195 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "5V_OUT"
+		(shape input)
+		(at 270.51 67.31 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e8475595-a440-4e84-8ec4-fdc1eac6a8a8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 280.3895 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 240.03 99.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00b0e9fc-7be0-4e03-b1ef-c1f555447604")
+		(property "Reference" "R2"
+			(at 242.57 97.7899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2K"
+			(at 242.57 100.3299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 238.252 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.in/en/products/detail/yageo/ac0402fr-072kl/5895258"
+			(at 240.03 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 240.03 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part#" "YAG3470CT-ND"
+			(at 240.03 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "df598820-5c26-4ff8-9203-b37f686eeb22")
+		)
+		(pin "1"
+			(uuid "98a62479-43b0-4eb2-b1e2-2c204cf70451")
+		)
+		(instances
+			(project "Buck_Converter_12V_3V3"
+				(path "/32fed717-3fa9-48ea-a1a1-4ba9bec3b454/baedb665-4e5c-4013-b239-c7af51cb2ae8"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 248.92 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "027799ec-1c7f-4d6f-9180-4425012526bc")
+		(property "Reference" "C21"
+			(at 250.444 69.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "47uF"
+			(at 250.698 65.024 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 249.8852 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.in/en/products/detail/tdk-corporation/C2012X5R0J476M125AC/2443465?s=N4IgTCBcDaIMJgAwEYwA0CsAlRApALAOwBsAsiALoC%2BQA"
+			(at 248.92 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 248.92 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part#" "445-5987-1-ND"
+			(at 248.92 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4db36faa-107c-477d-9576-779c39631dbb")
+		)
+		(pin "1"
+			(uuid "c25a0ea0-68c9-4d9b-94dc-9b231563e02b")
+		)
+		(instances
+			(project "Buck_Converter_12V_3V3"
+				(path "/32fed717-3fa9-48ea-a1a1-4ba9bec3b454/baedb665-4e5c-4013-b239-c7af51cb2ae8"
+					(reference "C21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 217.17 102.87 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0be95353-9757-414b-a847-10afd9ddb22e")
+		(property "Reference" "TP1"
+			(at 213.868 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FB"
+			(at 213.868 100.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 217.17 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 217.17 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 217.17 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a9538394-4f0d-431c-8811-b1dc40dd8450")
+		)
+		(instances
+			(project ""
+				(path "/32fed717-3fa9-48ea-a1a1-4ba9bec3b454/baedb665-4e5c-4013-b239-c7af51cb2ae8"
+					(reference "TP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 250.19 99.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0d7e3656-40b8-4e79-bea0-06bb69c5901e")
+		(property "Reference" "C27"
+			(at 251.46 96.774 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "220pF"
+			(at 250.952 93.218 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+			(at 251.1552 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.in/en/products/detail/tdk-corporation/c1005x7r1h221k050ba/513721"
+			(at 250.19 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 250.19 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part#" "445-1254-1-ND"
+			(at 250.19 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "36e18065-49b8-406c-9be0-62df6bbf1639")
+		)
+		(pin "1"
+			(uuid "34291ca9-4603-47ac-a2a5-ef040401ce49")
+		)
+		(instances
+			(project "Buck_Converter_12V_3V3"
+				(path "/32fed717-3fa9-48ea-a1a1-4ba9bec3b454/baedb665-4e5c-4013-b239-c7af51cb2ae8"
+					(reference "C27")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -1633,6 +2879,150 @@
 	)
 	(symbol
 		(lib_id "Device:C")
+		(at 213.36 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "175a987c-8f11-40a5-b831-6016c60b23fb")
+		(property "Reference" "C14"
+			(at 214.884 69.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "47uF"
+			(at 215.138 65.024 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 214.3252 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.in/en/products/detail/tdk-corporation/C2012X5R0J476M125AC/2443465?s=N4IgTCBcDaIMJgAwEYwA0CsAlRApALAOwBsAsiALoC%2BQA"
+			(at 213.36 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 213.36 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part#" "445-5987-1-ND"
+			(at 213.36 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "808c84fb-2784-48cd-b763-958a328ed9c1")
+		)
+		(pin "1"
+			(uuid "4731beb4-4cd7-445a-84aa-e7043ec5649a")
+		)
+		(instances
+			(project "Buck_Converter_12V_3V3"
+				(path "/32fed717-3fa9-48ea-a1a1-4ba9bec3b454/baedb665-4e5c-4013-b239-c7af51cb2ae8"
+					(reference "C14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 231.14 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1a405545-ff89-4d73-a42a-cb0a9e5bb27c")
+		(property "Reference" "#PWR02"
+			(at 231.14 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 231.14 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 231.14 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 231.14 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 231.14 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3a2ff6b5-0111-4b05-88a8-38e02d4b3db9")
+		)
+		(instances
+			(project "Buck_Converter_12V_3V3"
+				(path "/32fed717-3fa9-48ea-a1a1-4ba9bec3b454/baedb665-4e5c-4013-b239-c7af51cb2ae8"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
 		(at 74.93 64.77 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1704,6 +3094,84 @@
 			(project ""
 				(path "/32fed717-3fa9-48ea-a1a1-4ba9bec3b454/baedb665-4e5c-4013-b239-c7af51cb2ae8"
 					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 264.16 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1d7d6bef-f005-45dd-baaa-46cadff9d7e9")
+		(property "Reference" "C24"
+			(at 265.684 69.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2.2uF"
+			(at 265.938 65.024 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+			(at 265.1252 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.in/en/products/detail/tdk-corporation/C2012X5R0J476M125AC/2443465?s=N4IgTCBcDaIMJgAwEYwA0CsAlRApALAOwBsAsiALoC%2BQA"
+			(at 264.16 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 264.16 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part#" "90-12703-1-ND "
+			(at 264.16 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "65c6233e-6133-4850-b96b-2cbaa2e9c368")
+		)
+		(pin "1"
+			(uuid "5aed53fb-4432-4fba-ae61-1559a9c1d92d")
+		)
+		(instances
+			(project "Buck_Converter_12V_3V3"
+				(path "/32fed717-3fa9-48ea-a1a1-4ba9bec3b454/baedb665-4e5c-4013-b239-c7af51cb2ae8"
+					(reference "C24")
 					(unit 1)
 				)
 			)
@@ -1835,6 +3303,163 @@
 	)
 	(symbol
 		(lib_id "Device:C")
+		(at 115.57 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "24728fca-15b6-41ce-9efa-e8cbf4320a04")
+		(property "Reference" "C25"
+			(at 117.602 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2.2uF"
+			(at 117.602 93.472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+			(at 116.5352 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.in/en/products/detail/tdk-corporation/C2012X5R0J476M125AC/2443465?s=N4IgTCBcDaIMJgAwEYwA0CsAlRApALAOwBsAsiALoC%2BQA"
+			(at 115.57 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 115.57 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part#" "90-12703-1-ND "
+			(at 115.57 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2558c860-7e00-4056-9b86-22fd25cc6449")
+		)
+		(pin "1"
+			(uuid "76575dab-2246-4b31-a444-b3bb956bc5ab")
+		)
+		(instances
+			(project "Buck_Converter_12V_3V3"
+				(path "/32fed717-3fa9-48ea-a1a1-4ba9bec3b454/baedb665-4e5c-4013-b239-c7af51cb2ae8"
+					(reference "C25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 240.03 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3219a87c-33cc-4bcf-a3ca-55198a4bcd59")
+		(property "Reference" "R1"
+			(at 242.57 86.3599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "20E"
+			(at 242.57 88.8999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 238.252 87.63 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.in/en/products/detail/yageo/re0402fre0720rl/5923014"
+			(at 240.03 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 240.03 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part#" "13-RE0402FRE0720RLCT-ND"
+			(at 240.03 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ac2013bb-ffa2-4207-bacd-cfe923096684")
+		)
+		(pin "1"
+			(uuid "9f62568a-0936-447e-a47e-bfd96b0ab26d")
+		)
+		(instances
+			(project ""
+				(path "/32fed717-3fa9-48ea-a1a1-4ba9bec3b454/baedb665-4e5c-4013-b239-c7af51cb2ae8"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
 		(at 93.98 64.77 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1906,6 +3531,85 @@
 			(project "Buck_Converter_12V_3V3"
 				(path "/32fed717-3fa9-48ea-a1a1-4ba9bec3b454/baedb665-4e5c-4013-b239-c7af51cb2ae8"
 					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 240.03 109.22 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3d660aab-8d21-43f8-9bd5-5f3033a7b50a")
+		(property "Reference" "R3"
+			(at 242.57 107.9499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "18K"
+			(at 242.57 110.4899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 238.252 109.22 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.in/en/products/detail/yageo/ac0402fr-0718kl/5895116"
+			(at 240.03 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 240.03 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part#" "YAG3446CT-ND"
+			(at 240.03 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6873919e-f321-4896-a066-504d1d0fe288")
+		)
+		(pin "1"
+			(uuid "ac133aa7-2a2a-46fb-9526-adc97d6a1cad")
+		)
+		(instances
+			(project "Buck_Converter_12V_3V3"
+				(path "/32fed717-3fa9-48ea-a1a1-4ba9bec3b454/baedb665-4e5c-4013-b239-c7af51cb2ae8"
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -1990,42 +3694,34 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:L")
-		(at 175.26 77.47 90)
+		(lib_id "Device:C")
+		(at 228.6 71.12 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "579a90ff-cb17-496c-8854-8e04f6c7e060")
-		(property "Reference" "L1"
-			(at 175.26 72.39 90)
+		(uuid "4797ea15-f0d3-4d4d-922c-8c42a249af75")
+		(property "Reference" "C17"
+			(at 230.124 69.85 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "240nH"
-			(at 175.26 74.93 90)
+		(property "Value" "47uF"
+			(at 230.378 65.024 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Choke_Coil:Choke_Coil_SMD_3.5_8.4"
-			(at 175.26 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.digikey.in/en/products/detail/delta-electronics-cyntec/CMLE063T-R24MS1R197/9761385?s=N4IgTCBcDaIMIFkAyBRADANgMwBUBKYALAgMoCMeZAnAOwgC6AvkA"
-			(at 175.26 77.47 0)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 229.5652 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2033,8 +3729,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Inductor"
-			(at 175.26 77.47 0)
+		(property "Datasheet" "https://www.digikey.in/en/products/detail/tdk-corporation/C2012X5R0J476M125AC/2443465?s=N4IgTCBcDaIMJgAwEYwA0CsAlRApALAOwBsAsiALoC%2BQA"
+			(at 228.6 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2042,8 +3738,8 @@
 				(hide yes)
 			)
 		)
-		(property "Part#" "2037-CMLE063T-R24MS1R197DKR-ND "
-			(at 175.26 77.47 90)
+		(property "Description" "Unpolarized capacitor"
+			(at 228.6 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2051,16 +3747,25 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "04480b33-7328-41f5-aa7f-1328fd5b9eb0")
+		(property "Part#" "445-5987-1-ND"
+			(at 228.6 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "2"
-			(uuid "03c7b116-efdc-40c5-afcc-a3fe49c3d414")
+			(uuid "63a5be76-af59-4cf2-a460-d8afb849581c")
+		)
+		(pin "1"
+			(uuid "7fca6647-afbf-4ac7-af2f-cee35e99e04d")
 		)
 		(instances
-			(project ""
+			(project "Buck_Converter_12V_3V3"
 				(path "/32fed717-3fa9-48ea-a1a1-4ba9bec3b454/baedb665-4e5c-4013-b239-c7af51cb2ae8"
-					(reference "L1")
+					(reference "C17")
 					(unit 1)
 				)
 			)
@@ -2146,6 +3851,84 @@
 	)
 	(symbol
 		(lib_id "Device:C")
+		(at 238.76 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5c09fafc-0eaa-4940-ba08-f238d907f04b")
+		(property "Reference" "C19"
+			(at 240.284 69.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "47uF"
+			(at 240.538 65.024 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 239.7252 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.in/en/products/detail/tdk-corporation/C2012X5R0J476M125AC/2443465?s=N4IgTCBcDaIMJgAwEYwA0CsAlRApALAOwBsAsiALoC%2BQA"
+			(at 238.76 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 238.76 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part#" "445-5987-1-ND"
+			(at 238.76 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "834a9be6-5fa5-46f0-9bda-90af7fccd03d")
+		)
+		(pin "1"
+			(uuid "62721c43-ab3b-445c-b39b-c24c76b4cd05")
+		)
+		(instances
+			(project "Buck_Converter_12V_3V3"
+				(path "/32fed717-3fa9-48ea-a1a1-4ba9bec3b454/baedb665-4e5c-4013-b239-c7af51cb2ae8"
+					(reference "C19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
 		(at 62.23 64.77 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2217,6 +4000,72 @@
 			(project "Buck_Converter_12V_3V3"
 				(path "/32fed717-3fa9-48ea-a1a1-4ba9bec3b454/baedb665-4e5c-4013-b239-c7af51cb2ae8"
 					(reference "C7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 115.57 101.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "70441ae0-61da-4427-9d10-52e42d79c3c0")
+		(property "Reference" "#PWR03"
+			(at 115.57 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 115.57 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 115.57 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 115.57 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 115.57 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c31a4ab6-c6e9-4563-8879-456928e41415")
+		)
+		(instances
+			(project "Buck_Converter_12V_3V3"
+				(path "/32fed717-3fa9-48ea-a1a1-4ba9bec3b454/baedb665-4e5c-4013-b239-c7af51cb2ae8"
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -2302,6 +4151,318 @@
 	)
 	(symbol
 		(lib_id "Device:C")
+		(at 172.72 72.39 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "71bd5f62-75d6-4ae7-a2e3-6fbf09310a9c")
+		(property "Reference" "C26"
+			(at 172.466 68.326 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 179.324 68.326 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+			(at 176.53 71.4248 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.in/en/products/detail/murata-electronics/GRM155R71C104KA88D/675947?s=N4IgTCBcDaIOICUCyBGArGhB2FBhFADACwDSAggBwUAiIAugL5A"
+			(at 172.72 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 172.72 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part#" "490-3261-1-ND "
+			(at 172.72 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0a025c40-2f01-476b-8734-eb6a007580ff")
+		)
+		(pin "1"
+			(uuid "825178d1-8d7e-49d4-87b4-5253709b64e4")
+		)
+		(instances
+			(project "Buck_Converter_12V_3V3"
+				(path "/32fed717-3fa9-48ea-a1a1-4ba9bec3b454/baedb665-4e5c-4013-b239-c7af51cb2ae8"
+					(reference "C26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 218.44 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "74873e5c-f56b-4e8c-9065-30e8502d26d2")
+		(property "Reference" "C15"
+			(at 219.964 69.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "47uF"
+			(at 220.218 65.024 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 219.4052 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.in/en/products/detail/tdk-corporation/C2012X5R0J476M125AC/2443465?s=N4IgTCBcDaIMJgAwEYwA0CsAlRApALAOwBsAsiALoC%2BQA"
+			(at 218.44 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 218.44 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part#" "445-5987-1-ND"
+			(at 218.44 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "77663874-ec29-4900-a122-7f6847d265d7")
+		)
+		(pin "1"
+			(uuid "ac7a35ef-9e6e-4c1c-b612-8608e5de6623")
+		)
+		(instances
+			(project "Buck_Converter_12V_3V3"
+				(path "/32fed717-3fa9-48ea-a1a1-4ba9bec3b454/baedb665-4e5c-4013-b239-c7af51cb2ae8"
+					(reference "C15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 223.52 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7499998a-a0c7-46c5-81a0-a254805ea2e3")
+		(property "Reference" "C16"
+			(at 225.044 69.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "47uF"
+			(at 225.298 65.024 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 224.4852 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.in/en/products/detail/tdk-corporation/C2012X5R0J476M125AC/2443465?s=N4IgTCBcDaIMJgAwEYwA0CsAlRApALAOwBsAsiALoC%2BQA"
+			(at 223.52 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 223.52 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part#" "445-5987-1-ND"
+			(at 223.52 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2279c167-65e9-4a5b-9818-150180462a75")
+		)
+		(pin "1"
+			(uuid "1e5d1381-e9b8-4e7e-bd0d-35fd333ab35f")
+		)
+		(instances
+			(project "Buck_Converter_12V_3V3"
+				(path "/32fed717-3fa9-48ea-a1a1-4ba9bec3b454/baedb665-4e5c-4013-b239-c7af51cb2ae8"
+					(reference "C16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 243.84 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7c79d57e-cd40-4d11-b5f9-4d498d79d9f2")
+		(property "Reference" "C20"
+			(at 245.364 69.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "47uF"
+			(at 245.618 65.024 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 244.8052 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.in/en/products/detail/tdk-corporation/C2012X5R0J476M125AC/2443465?s=N4IgTCBcDaIMJgAwEYwA0CsAlRApALAOwBsAsiALoC%2BQA"
+			(at 243.84 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 243.84 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part#" "445-5987-1-ND"
+			(at 243.84 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c7a1ff65-ca68-473c-95ed-8526bed1867c")
+		)
+		(pin "1"
+			(uuid "cda34cbd-b3dd-4816-9a51-5370e1247f09")
+		)
+		(instances
+			(project "Buck_Converter_12V_3V3"
+				(path "/32fed717-3fa9-48ea-a1a1-4ba9bec3b454/baedb665-4e5c-4013-b239-c7af51cb2ae8"
+					(reference "C20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
 		(at 68.58 64.77 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2373,6 +4534,358 @@
 			(project "Buck_Converter_12V_3V3"
 				(path "/32fed717-3fa9-48ea-a1a1-4ba9bec3b454/baedb665-4e5c-4013-b239-c7af51cb2ae8"
 					(reference "C8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Inductor:SDEM25201T-R24MS")
+		(at 190.5 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7d83896e-246e-4d0c-af83-a891ceb3d7ab")
+		(property "Reference" "L1"
+			(at 190.5 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SDEM25201T-R24MS"
+			(at 190.5 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SDEM25201T-R24MS:IND_SDEM25201T-R24MS"
+			(at 190.5 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.in/en/products/detail/delta-electronics-cyntec/sdem25201t-r24ms/9761159"
+			(at 190.5 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 190.5 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" "N/A"
+			(at 190.5 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "Delta Electronics"
+			(at 190.5 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "1.0 mm"
+			(at 190.5 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 190.5 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Part#" "2037-SDEM25201T-R24MSCT-ND"
+			(at 190.5 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "15ff7980-36a0-42b8-9064-1e25069a9eff")
+		)
+		(pin "1"
+			(uuid "d46cbf0d-8c0b-404c-9625-49dfcbed6ae9")
+		)
+		(instances
+			(project ""
+				(path "/32fed717-3fa9-48ea-a1a1-4ba9bec3b454/baedb665-4e5c-4013-b239-c7af51cb2ae8"
+					(reference "L1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 254 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "811aad10-b1af-4334-bcf1-8c82ce5cdb26")
+		(property "Reference" "C22"
+			(at 255.524 69.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "47uF"
+			(at 255.778 65.024 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 254.9652 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.in/en/products/detail/tdk-corporation/C2012X5R0J476M125AC/2443465?s=N4IgTCBcDaIMJgAwEYwA0CsAlRApALAOwBsAsiALoC%2BQA"
+			(at 254 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 254 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part#" "445-5987-1-ND"
+			(at 254 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9a1bb4da-cc27-4918-b58d-e779a115efb9")
+		)
+		(pin "1"
+			(uuid "a9fc2aca-cfcb-404d-8ea1-b03955e3791f")
+		)
+		(instances
+			(project "Buck_Converter_12V_3V3"
+				(path "/32fed717-3fa9-48ea-a1a1-4ba9bec3b454/baedb665-4e5c-4013-b239-c7af51cb2ae8"
+					(reference "C22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 208.28 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8211ea8d-dfdb-4c6b-a3fa-3048e9987509")
+		(property "Reference" "C13"
+			(at 209.804 69.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "47uF"
+			(at 210.058 65.024 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 209.2452 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.in/en/products/detail/tdk-corporation/C2012X5R0J476M125AC/2443465?s=N4IgTCBcDaIMJgAwEYwA0CsAlRApALAOwBsAsiALoC%2BQA"
+			(at 208.28 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 208.28 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part#" "445-5987-1-ND"
+			(at 208.28 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "aa61edcd-34bd-4d8f-96b3-864ff71410c3")
+		)
+		(pin "1"
+			(uuid "d35b38e2-faae-4f97-a7af-b85d94005351")
+		)
+		(instances
+			(project ""
+				(path "/32fed717-3fa9-48ea-a1a1-4ba9bec3b454/baedb665-4e5c-4013-b239-c7af51cb2ae8"
+					(reference "C13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 233.68 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "87ce91dc-2770-436a-afd7-1d74e94b14ec")
+		(property "Reference" "C18"
+			(at 235.204 69.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "47uF"
+			(at 235.458 65.024 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 234.6452 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.in/en/products/detail/tdk-corporation/C2012X5R0J476M125AC/2443465?s=N4IgTCBcDaIMJgAwEYwA0CsAlRApALAOwBsAsiALoC%2BQA"
+			(at 233.68 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 233.68 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part#" "445-5987-1-ND"
+			(at 233.68 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d60a8da9-d566-4ff0-8024-2bc7389d8f38")
+		)
+		(pin "1"
+			(uuid "3dc83c81-3465-4a89-9169-fbbbbbbadfba")
+		)
+		(instances
+			(project "Buck_Converter_12V_3V3"
+				(path "/32fed717-3fa9-48ea-a1a1-4ba9bec3b454/baedb665-4e5c-4013-b239-c7af51cb2ae8"
+					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -2679,6 +5192,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 175.26 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "da8c0760-c496-42f6-b887-07b1abcf1ef9")
+		(property "Reference" "#PWR05"
+			(at 175.26 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 175.26 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 175.26 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 175.26 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 175.26 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6e56b7b3-782a-48b2-9ddf-34798fc47e5d")
+		)
+		(instances
+			(project "Buck_Converter_12V_3V3"
+				(path "/32fed717-3fa9-48ea-a1a1-4ba9bec3b454/baedb665-4e5c-4013-b239-c7af51cb2ae8"
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 81.28 64.77 0)
 		(unit 1)
@@ -2751,6 +5330,150 @@
 			(project "Buck_Converter_12V_3V3"
 				(path "/32fed717-3fa9-48ea-a1a1-4ba9bec3b454/baedb665-4e5c-4013-b239-c7af51cb2ae8"
 					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 240.03 115.57 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f9c4bc52-4074-4ae7-a5d1-d7ab2091b347")
+		(property "Reference" "#PWR04"
+			(at 240.03 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 240.03 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 240.03 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 240.03 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 240.03 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d022a822-268f-4acf-8297-cb40c477922e")
+		)
+		(instances
+			(project "Buck_Converter_12V_3V3"
+				(path "/32fed717-3fa9-48ea-a1a1-4ba9bec3b454/baedb665-4e5c-4013-b239-c7af51cb2ae8"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 259.08 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fcbbf355-4ac6-4702-b822-3b4ca2a71c89")
+		(property "Reference" "C23"
+			(at 260.604 69.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "47uF"
+			(at 260.858 65.024 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 260.0452 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.in/en/products/detail/tdk-corporation/C2012X5R0J476M125AC/2443465?s=N4IgTCBcDaIMJgAwEYwA0CsAlRApALAOwBsAsiALoC%2BQA"
+			(at 259.08 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 259.08 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part#" "445-5987-1-ND"
+			(at 259.08 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "90c358fd-8f65-4322-8faf-148aa4d7ba27")
+		)
+		(pin "1"
+			(uuid "f14d643f-a34e-4439-bbfa-2e1c1d36d741")
+		)
+		(instances
+			(project "Buck_Converter_12V_3V3"
+				(path "/32fed717-3fa9-48ea-a1a1-4ba9bec3b454/baedb665-4e5c-4013-b239-c7af51cb2ae8"
+					(reference "C23")
 					(unit 1)
 				)
 			)
