@@ -6,4 +6,5 @@
   (lib (name "Connector")(type "KiCad")(uri "${KIPRJMOD}/KiCAD_DB/FOOTPRINT/Connectors.pretty")(options "")(descr ""))
   (lib (name "Diodes")(type "KiCad")(uri "${KIPRJMOD}/KiCAD_DB/FOOTPRINT/Diodes.pretty")(options "")(descr ""))
   (lib (name "Inductor")(type "KiCad")(uri "${KIPRJMOD}/KiCAD_DB/FOOTPRINT/Inductor.pretty")(options "")(descr ""))
+  (lib (name "SS_Resistors")(type "KiCad")(uri "${KIPRJMOD}/KiCAD_DB/FOOTPRINT/SS_Resistor.pretty")(options "")(descr ""))
 )

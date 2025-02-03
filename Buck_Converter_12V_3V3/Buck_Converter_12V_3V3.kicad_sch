@@ -1182,175 +1182,6 @@
 				)
 			)
 		)
-		(symbol "Device:LED"
-			(pin_numbers hide)
-			(pin_names
-				(offset 1.016) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "D"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "LED"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Light emitting diode"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "LED diode"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "LED_0_1"
-				(polyline
-					(pts
-						(xy -1.27 -1.27) (xy -1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 0) (xy 1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "LED_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Device:R"
 			(pin_numbers hide)
 			(pin_names
@@ -1463,6 +1294,167 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:R_Potentiometer"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "RV"
+				(at -4.445 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R_Potentiometer"
+				(at -2.54 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Potentiometer"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "resistor variable"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Potentiometer*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_Potentiometer_0_1"
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 1.524 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.143 0) (xy 2.286 0.508) (xy 2.286 -0.508) (xy 1.143 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 1.016 2.54)
+					(end -1.016 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_Potentiometer_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2008,12 +2000,6 @@
 		(uuid "38e8bff6-dfed-4c5b-9693-eea09df45ee0")
 	)
 	(junction
-		(at 228.6 96.52)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "451b4528-2bce-4ad9-9cb1-30c6dea597f8")
-	)
-	(junction
 		(at 256.54 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2024,12 +2010,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "63ffa947-a70d-45d8-88c4-412e7cd3a6ea")
-	)
-	(junction
-		(at 194.31 111.76)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "67c4e8aa-00e0-4906-832d-6d4899d13ff7")
 	)
 	(junction
 		(at 58.42 78.74)
@@ -2191,7 +2171,7 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 96.52) (xy 228.6 96.52)
+			(xy 194.31 96.52) (xy 246.38 96.52)
 		)
 		(stroke
 			(width 0)
@@ -2241,17 +2221,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 96.52) (xy 228.6 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "21b0d38e-f477-477f-964a-b0d4d15c3d31")
-	)
-	(wire
-		(pts
-			(xy 166.37 90.17) (xy 172.72 90.17)
+			(xy 166.37 90.17) (xy 173.99 90.17)
 		)
 		(stroke
 			(width 0)
@@ -2261,17 +2231,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 96.52) (xy 246.38 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2b1d2cd9-b8e4-48aa-b568-ff9006c60582")
-	)
-	(wire
-		(pts
-			(xy 194.31 120.65) (xy 194.31 123.19)
+			(xy 194.31 114.3) (xy 194.31 123.19)
 		)
 		(stroke
 			(width 0)
@@ -2311,16 +2271,6 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 109.22) (xy 228.6 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3e61e9c3-f7e4-4b5b-8dea-5ac33a29473a")
-	)
-	(wire
-		(pts
 			(xy 256.54 97.79) (xy 256.54 100.33)
 		)
 		(stroke
@@ -2331,7 +2281,7 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 102.87) (xy 194.31 96.52)
+			(xy 194.31 96.52) (xy 194.31 106.68)
 		)
 		(stroke
 			(width 0)
@@ -2371,6 +2321,16 @@
 	)
 	(wire
 		(pts
+			(xy 199.39 104.14) (xy 199.39 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50117d43-eeb0-404f-b9fb-befff4b3e689")
+	)
+	(wire
+		(pts
 			(xy 58.42 86.36) (xy 58.42 88.9)
 		)
 		(stroke
@@ -2398,16 +2358,6 @@
 			(type default)
 		)
 		(uuid "55bbb0b1-6014-434f-8840-3d677fa1eb55")
-	)
-	(wire
-		(pts
-			(xy 172.72 111.76) (xy 194.31 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "575b7fdd-d45a-46be-a80a-5a568d9123c8")
 	)
 	(wire
 		(pts
@@ -2501,13 +2451,13 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 111.76) (xy 194.31 113.03)
+			(xy 173.99 104.14) (xy 199.39 104.14)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7ccc4e76-6906-4ad7-98f8-42f0e55ad538")
+		(uuid "7b6dd835-802c-4e56-b709-461e76ccf66c")
 	)
 	(wire
 		(pts
@@ -2531,16 +2481,6 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 110.49) (xy 194.31 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "976a563a-7522-479b-b550-dc914dd57427")
-	)
-	(wire
-		(pts
 			(xy 74.93 78.74) (xy 88.9 78.74)
 		)
 		(stroke
@@ -2548,16 +2488,6 @@
 			(type default)
 		)
 		(uuid "98fc7687-f0fd-46df-8a66-52f2dde0e8da")
-	)
-	(wire
-		(pts
-			(xy 228.6 119.38) (xy 228.6 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9a70e194-33ce-4c1c-b3cc-ce109ff6066b")
 	)
 	(wire
 		(pts
@@ -2591,16 +2521,6 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 90.17) (xy 172.72 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a873eb3d-75ec-409a-9948-06eb248a3366")
-	)
-	(wire
-		(pts
 			(xy 120.65 78.74) (xy 120.65 80.01)
 		)
 		(stroke
@@ -2628,6 +2548,16 @@
 			(type default)
 		)
 		(uuid "b7041592-9849-4764-a108-c16296d655f1")
+	)
+	(wire
+		(pts
+			(xy 173.99 90.17) (xy 173.99 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8e84d08-46b4-49d7-8b1d-68f72edaa7ea")
 	)
 	(wire
 		(pts
@@ -2751,6 +2681,16 @@
 	)
 	(wire
 		(pts
+			(xy 199.39 110.49) (xy 198.12 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4d36d20-ed76-4d24-8308-5eb1b2bb394c")
+	)
+	(wire
+		(pts
 			(xy 256.54 85.09) (xy 256.54 87.63)
 		)
 		(stroke
@@ -2758,164 +2698,6 @@
 			(type default)
 		)
 		(uuid "fe259a31-79d9-4c4f-9b95-8f5e3a07b5ba")
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 228.6 115.57 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0a3d60fb-a461-463f-abed-57b0a196658d")
-		(property "Reference" "R4"
-			(at 231.14 114.2999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100E"
-			(at 231.14 116.8399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
-			(at 226.822 115.57 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.digikey.in/en/products/detail/yageo/RC1206JR-07100RL/729206"
-			(at 228.6 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 228.6 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey Part#" "311-100ERCT-ND"
-			(at 228.6 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "16696ed7-f3b5-4d7d-9e40-943a3fb8193b")
-		)
-		(pin "2"
-			(uuid "ae6dd910-107c-442b-b2ca-10dbe943922a")
-		)
-		(instances
-			(project "Buck_Converter_12V_3V3"
-				(path "/32fed717-3fa9-48ea-a1a1-4ba9bec3b454"
-					(reference "R4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 228.6 105.41 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0b7e9a2c-c067-4b54-8fa1-1394d25ccb29")
-		(property "Reference" "D2"
-			(at 231.14 102.5524 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "LED"
-			(at 231.14 105.0924 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "LED_THT:LED_D5.0mm"
-			(at 228.6 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 228.6 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 228.6 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey Part#" ""
-			(at 228.6 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e747d4ef-06c7-47d9-b708-75f7c3f453ac")
-		)
-		(pin "2"
-			(uuid "5e16a1e8-4445-4432-b58e-63c54320ef07")
-		)
-		(instances
-			(project ""
-				(path "/32fed717-3fa9-48ea-a1a1-4ba9bec3b454"
-					(reference "D2")
-					(unit 1)
-				)
-			)
-		)
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -3444,72 +3226,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 228.6 123.19 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2fa8a3b4-3bd2-427c-8a65-9e9112c83eed")
-		(property "Reference" "#PWR07"
-			(at 228.6 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 228.6 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 228.6 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 228.6 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 228.6 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9cf220cf-2a28-4e5d-8d3e-9c3e41458200")
-		)
-		(instances
-			(project "Buck_Converter_12V_3V3"
-				(path "/32fed717-3fa9-48ea-a1a1-4ba9bec3b454"
-					(reference "#PWR07")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 227.33 86.36 0)
 		(unit 1)
@@ -3582,85 +3298,6 @@
 			(project "Buck_Converter_12V_3V3"
 				(path "/32fed717-3fa9-48ea-a1a1-4ba9bec3b454"
 					(reference "C6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 194.31 106.68 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "46ae225b-fcba-4fa0-8749-d30fedd92a39")
-		(property "Reference" "R2"
-			(at 196.85 105.4099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "3.01K"
-			(at 196.85 107.9499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
-			(at 192.532 106.68 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.digikey.in/en/products/detail/panasonic-electronic-components/erj-8enf3011v/88954"
-			(at 194.31 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 194.31 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey Part#" "P3.01KFCT-ND"
-			(at 194.31 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9b241a23-4dc0-421f-b16f-ec9fe9705980")
-		)
-		(pin "2"
-			(uuid "bbe6f6e1-d565-43af-8038-c276c3e9ac3d")
-		)
-		(instances
-			(project ""
-				(path "/32fed717-3fa9-48ea-a1a1-4ba9bec3b454"
-					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -4340,6 +3977,88 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Potentiometer")
+		(at 194.31 110.49 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ca0c07f9-24f4-45dc-b132-891151d16554")
+		(property "Reference" "RV1"
+			(at 191.77 109.2199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "R_Potentiometer"
+			(at 191.77 111.7599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "SS_Resistors:601030_AVX"
+			(at 194.31 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.in/en/products/detail/kyocera-avx/601030/10491403"
+			(at 194.31 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Potentiometer"
+			(at 194.31 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part#" "  478-601030-ND"
+			(at 194.31 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "bc07e6c1-4693-4e13-8be3-067028a00732")
+		)
+		(pin "1"
+			(uuid "10270c37-a8e7-4b85-b1fd-6057335071c4")
+		)
+		(pin "2"
+			(uuid "f20f62ee-ed0b-4cb3-8a44-569518a1735f")
+		)
+		(instances
+			(project ""
+				(path "/32fed717-3fa9-48ea-a1a1-4ba9bec3b454"
+					(reference "RV1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Capacitor_1:EEVFK1E222M")
 		(at 220.98 85.09 270)
 		(unit 1)
@@ -4629,85 +4348,6 @@
 			(project ""
 				(path "/32fed717-3fa9-48ea-a1a1-4ba9bec3b454"
 					(reference "J2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 194.31 116.84 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "efad228d-4fb2-4834-8dfe-a8f6cb2c57ed")
-		(property "Reference" "R3"
-			(at 196.85 115.5699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1K"
-			(at 196.85 118.1099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
-			(at 192.532 116.84 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.digikey.in/en/products/detail/panasonic-electronic-components/erj-8enf3011v/88954"
-			(at 194.31 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 194.31 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey Part#" "P1.00KFCT-ND"
-			(at 194.31 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "56f4cbe8-ff80-4f84-832a-995fe02721fd")
-		)
-		(pin "2"
-			(uuid "2c9abe90-b957-4112-9542-0f8223c94242")
-		)
-		(instances
-			(project "Buck_Converter_12V_3V3"
-				(path "/32fed717-3fa9-48ea-a1a1-4ba9bec3b454"
-					(reference "R3")
 					(unit 1)
 				)
 			)

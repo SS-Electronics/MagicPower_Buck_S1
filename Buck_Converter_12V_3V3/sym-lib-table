@@ -7,4 +7,5 @@
   (lib (name "Diodes")(type "KiCad")(uri "${KIPRJMOD}/KiCAD_DB/SYMBOL/B550Cxx.kicad_sym")(options "")(descr ""))
   (lib (name "Inductor")(type "KiCad")(uri "${KIPRJMOD}/KiCAD_DB/SYMBOL/PM2120-101K-RC.kicad_sym")(options "")(descr ""))
   (lib (name "Capacitor_1")(type "KiCad")(uri "${KIPRJMOD}/KiCAD_DB/SYMBOL/EEVFK1E222M.kicad_sym")(options "")(descr ""))
+  (lib (name "Resistor")(type "KiCad")(uri "${KIPRJMOD}/KiCAD_DB/SYMBOL/601030.kicad_sym")(options "")(descr ""))
 )
